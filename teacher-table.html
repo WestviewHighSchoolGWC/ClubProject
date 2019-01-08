@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#tableStyle {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#teacherTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#teacherTable th, #teacherTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#teacherTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#teacherTable tr.header, #teacherTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>WHS Teachers</h2>
+
+<input type="text" id="tableStyle" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+
+<table id="teacherTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+</table>
+
+
+
+<script>
+function search() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("tableStyle");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("teacherTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
