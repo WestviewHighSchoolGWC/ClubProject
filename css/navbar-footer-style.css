@@ -1,0 +1,44 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color:#cb4e4a;
+  border:none;
+}
+
+#logo{
+  width:50%;
+  height:50%;
+}
+
+#myNavbar a{
+  color:white;
+  font-family:'Montserrat', sans-serif;
+}
+footer {
+  background-color: #383636;
+  color: white;
+  font-family: 'Slabo 27px', serif;
+}
+
+#title{
+  color: white;
+  font-family: 'Slabo 27px', serif;
+  letter-spacing:3px;
+}
+
+#bg{
+  background-color:#ea726e;
+}
+
+#myNavbar .active{
+  font-weight: 700;
+}
+
+#myNavbar a:hover{
+  background: #d26663;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .row.content {height:auto;}
+}

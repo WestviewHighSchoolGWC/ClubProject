@@ -7,65 +7,25 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Montserrat:400,700" rel="stylesheet">
+  <link href="css/navbar-footer-style.css" rel="stylesheet">
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
+    .jumbotron{
+      position: relative;
+      background: url(img/westview.jpg) left;
+      height: 600px;
+      background-size: cover;
+      overflow: hidden;
       margin-bottom: 0;
-      border-radius: 0;
-      background-color:#cb4e4a;
-      border:none;
     }
 
-    #myNavbar a{
-      color:white;
-    }
-
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-
-    #title{
-      color: white;
-      font-family: 'Slabo 27px', serif;
-      letter-spacing:2px;
-    }
-
-    .bg{
-      background-color:#ea726e;
-    }
-
-    .navbar .active{
-      background-color:#cb4e4a;
-    }
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;}
-    }
   </style>
 </head>
 <body>
-<div class = "container-fluid bg">
+<div class = "container-fluid" id = "bg">
   <h1 id = "title">WESTVIEW GUIDE</h1>
 </div>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-light">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -89,36 +49,17 @@
   </div>
 </nav>
 
-<div class="container-fluid text-center">
-  <div class = "row">
-
-  </div>
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-    </div>
-    <div class="col-sm-8 text-left">
-      <h1>Welcome</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
-      <h3>Test</h3>
-      <p>Lorem ipsum...</p>
-    </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>PHOTOS</p>
-      </div>
-      <div class="well">
-        <p>PHOTOS</p>
-      </div>
-    </div>
-  </div>
+<div class ="jumbotron">
 </div>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <div class="row">
+    <div class = "col-sm-2">
+      <a href="https://girlswhocodewhs.weebly.com/"><img id="logo" src="img/gwc-logo.png"></a>
+    </div>
+    <div class = "col-sm-6"></div>
+    <div class = "col-sm-4"></div>
+  </div>
 </footer>
 
 </body>

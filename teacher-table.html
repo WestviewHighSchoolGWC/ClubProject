@@ -9,7 +9,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link href="css/navbar-footer-style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Montserrat:400,700" rel="stylesheet">
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
@@ -28,13 +29,15 @@
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+  font-style:
 }
 
 #teacherTable {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #ddd;
   font-size: 18px;
+  background-color: white;
+  font-family:'Montserrat', sans-serif;
 }
 
 #teacherTable th, #teacherTable td {
@@ -46,14 +49,58 @@
   border-bottom: 1px solid #ddd;
 }
 
-#teacherTable tr.header, #teacherTable tr:hover {
+#teacherTable tr.header,  #teacherTable tr.header:hover{
+  background-color:#cb4e4a;
+  color:#383636;
+}
+
+#teacherTable tr:hover {
   background-color: #f1f1f1;
+}
+
+#tableContainer{
+  background-color:#ea726e;
+  padding-bottom: 3%;
+}
+
+#tableContainer h2{
+  color: white;
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+  letter-spacing:.5px;
 }
 </style>
 </head>
 <body>
+  <div class = "container-fluid" id = "bg">
+    <h1 id = "title">WESTVIEW GUIDE</h1>
+  </div>
+  <nav class="navbar navbar-light">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Freshman Guide</a></li>
+          <li  class="active"><a href="teacher-table.html">Staff Locator</a></li>
+          <li><a href="StressandWellness.html">Stress & Well-Being</a></li>
+          <li><a href="college-and-career.html">College & Career</a></li>
+          <li><a href="#">Scholarships</a></li>
+          <li><a href="#">Organization</a></li>
+          <li><a href="#">Time Management</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<h2>WHS Teachers</h2>
+<div class="container-fluid" id="tableContainer">
+<h2>Search for Teachers</h2>
 
 <input type="text" id="tableStyle" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
 
@@ -141,7 +188,6 @@
     <td>P8?</td>
     <td>P8</td>
     <td>P8</td>
-    <td>P8</td>
   </tr>
   <tr>
     <td>Belleque, Joshua</td>
@@ -166,10 +212,19 @@
     <td>S136</td>
     <td>S136</td>
     <td>S136</td>
-    <td>S136</td>
   </tr>
 </table>
+</div>
 
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class = "col-sm-2">
+      <a href="https://girlswhocodewhs.weebly.com/"><img id="logo" src="img/gwc-logo.png"></a>
+    </div>
+    <div class = "col-sm-6"></div>
+    <div class = "col-sm-4"></div>
+  </div>
+</footer>
 
 
 <script>
