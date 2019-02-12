@@ -8,28 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Montserrat:400,700" rel="stylesheet">
+  <link href="css/navbar-footer-style.css" rel="stylesheet">
   <style>
-	.navbar {
-		margin-bottom: 0;
-		border-radius: 0;
-		background-color: #b30000;
-		color: #fff;
-		padding: 1% 0;
-		font-size: 1.2 em;
-		border: 0;
-	}
-	.navbar-brand {
-		float: left;
-		min-height: 55px;
-		padding: 0 15px 5px;
-	}
-	.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
-		color: #FFF;
-		background-color: #b30000;	
-	}
-	.navbar-inverse .navbar-nav li a {
-		color: #D5D5D5
-	}
+
 	.carousel-caption {
 		top: 50%;
 		transform: translateY(-50%);
@@ -44,9 +26,9 @@
 	}
 	#icon {
 		max-width: 200px;
-		margin: 1% auto; 
+		margin: 1% auto;
 	}
-	
+
 	@media (max-width: 600px) {
 		.carousel-caption {
 			display: none;
@@ -58,36 +40,50 @@
 			font-size: 1.7em;
 		}
 	}
-	
+
 
   </style>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid"> 
-			<div class="navbar-header"> 
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="img/w3newbie.png">
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Career Pathways</a></li>
-					<li><a href="#">Scholarships</a></li>
-					<li><a href="#">Finding Colleges</a></li>
-				</ul>
-			</div>
-			
-		</div>
-	</nav> 
+  <div class = "container-fluid" id = "bg">
+    <h1 id = "title">WESTVIEW GUIDE</h1>
+  </div>
+  <nav class="navbar navbar-light">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Freshman Guide</a></li>
+          <li><a href="teacher-table.html">Staff Locator</a></li>
+          <li><a href="StressandWellness.html">Stress & Well-Being</a></li>
+          <li class="dropdown active">
+            <a href="college-and-career.html" class="dropdown-toggle disabled" data-toggle="dropdown" >College & Career
+              <b class="carat"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Career Pathways</a></li>
+              <li><a href="#">Scholarships</a></li>
+              <li><a href="#">Finding Colleges</a></li>
+            </ul>
+          </li> <!--end dropdown-->
+          <li><a href="#">Scholarships</a></li>
+          <li><a href="orgnstudying.html">Organization</a></li>
+          <li><a href="#">Time Management</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
-			<li data-target ="#myCarousel" data-slide-to="0" class="active"></li> 
+			<li data-target ="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target ="#myCarousel" data-slide-to="1"></li>
 			<li data-target ="#myCarousel" data-slide-to="2"></li>
 		</ol>
@@ -117,7 +113,7 @@
 		<span class="sr-only">Next</span>
 		</a>
 	</div> <!--- End slider -->
-	
+
 	<div class="container text-center">
 		<h2>What We're Using</h2>
 		<div class="row">
@@ -132,32 +128,32 @@
 			<div class="col-sm-4">
 				<img src="img/bootstrap.png" id="icon">
 				<h4>College and Career Pathways</h4>
-				<p>The career pathway program gives you information on what courses to take in 
-				order to gain skills related to your career area of interest. This will help 
-				prepare you for study at colleges, universities, technical institution, or other 
-				post-high school opportunities. 
+				<p>The career pathway program gives you information on what courses to take in
+				order to gain skills related to your career area of interest. This will help
+				prepare you for study at colleges, universities, technical institution, or other
+				post-high school opportunities.
 				<b>To complete a pathway and earn a cord at graduation, you must:
 				<b>- Explore pathways of interests during your 9th grade year.
 				<b>- Check in the Pathway Lead for your chosen pathway and forecast for the required classes.
 				<b>- Complete a Career Related Leading Experience (CRLE) related to pathway.
-				<b>- Complete a pathway project. Check with project lead for requirements!					
+				<b>- Complete a pathway project. Check with project lead for requirements!
 				</p>
 			</div>
 			<div class="col-sm-4">
 				<img src="img/css3.png" id="icon">
 				<h4>Colleges Visiting Westview</h4>
 				<p>
-				<b>Students: The college rep schedules are posted on Canvas. 
+				<b>Students: The college rep schedules are posted on Canvas.
 				<b>Students: please sign up in the CCC prior to visit, and get a pass for 7/8 period. Presentations are open to all students.</p>
 				</p>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				
+
 				<h4>Career Education</h4>
 				<p>
 				<b>9th Grade:
@@ -168,9 +164,9 @@
 				<b>- Interest Profiler
 				<b>- Research Post Secondary Options
 				</p>
-				
+
 				<p>
-				<b>10th Grade: 
+				<b>10th Grade:
 				<b>- Students complete a CRLE
 				<b>- CIS Work
 				<b>- Explore three occupations
@@ -178,7 +174,7 @@
 				<b>- Complete a job application
 				<b>- Update four year plan-with post secondary goals
 				</p>
-				
+
 				<p>
 				<b>11th Grade:
 				<b>- Students complete a CRLE
@@ -189,7 +185,7 @@
 				<b>- Resume
 				<b>- Mock Interview
 				</p>
-				
+
 				<p>
 				<b>12th Grade:
 				<b>- Students complete a CRLE
@@ -198,14 +194,21 @@
 				<b>- Set after high school goals
 				<b>- Update 4 year plan to include 2 years after high school
 				</p>
-		
+
 			</div>
 			<div class="col-md-6">
 				<img src="img/bootstrap2.jpg" class="img-responsive">
 			</div>
 		</div>
-	
+
 	</div>
 
 </body>
+<script>
+  $('ul.nav li.dropdown').hover(function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+  }, function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+  });
+</script>
 </html>

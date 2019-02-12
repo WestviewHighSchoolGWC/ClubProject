@@ -5,6 +5,10 @@
   border:none;
 }
 
+.dropdown-menu{
+  background-color: #cb4e4a;
+}
+  
 #logo{
   width:50%;
   height:50%;

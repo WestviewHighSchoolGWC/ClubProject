@@ -44,7 +44,16 @@
         <li><a href="#">Freshman Guide</a></li>
         <li><a href="teacher-table.html">Staff Locator</a></li>
         <li><a href="StressandWellness.html">Stress & Well-Being</a></li>
-        <li><a href="college-and-career.html">College & Career</a></li>
+        <li class="dropdown">
+          <a href="college-and-career.html" class="dropdown-toggle disabled" data-toggle="dropdown" >College & Career
+            <b class="carat"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Career Pathways</a></li>
+            <li><a href="#">Scholarships</a></li>
+            <li><a href="#">Finding Colleges</a></li>
+          </ul>
+        </li> <!--end dropdown-->
         <li><a href="#">Scholarships</a></li>
         <li><a href="#">Organization</a></li>
         <li><a href="#">Time Management</a></li>
@@ -65,6 +74,14 @@
     <div class = "col-sm-4"></div>
   </div>
 </footer>
+
+<script>
+  $('ul.nav li.dropdown').hover(function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+  }, function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+  });
+</script>
 
 </body>
 </html>
