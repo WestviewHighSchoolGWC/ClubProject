@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <title>Girls Who Code WHS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px|Montserrat:400,700" rel="stylesheet">
+<link href="css/navbar-footer-style.css" rel="stylesheet">
+<style>
+  .jumbotron{
+    position: relative;
+    background: url(img/scholarships_bg.jpg) left;
+    height: 600px;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  .credit{
+    text-align: right;
+    margin-top: -40px;
+    padding: 10px;
+    font-family:Montserrat;
+  }
+  .icon-bar{
+    background-color: white;
+  }
+
+</style>
+  <title>Girls Who Code WHS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Montserrat:400,700" rel="stylesheet">
+  <link href="css/navbar-footer-style.css" rel="stylesheet">
+</head>
+
+
+<body>
+<div class = "container-fluid" id = "bg">
+  <h1 id = "title">WESTVIEW GUIDE</h1>
+</div>
+<nav class="navbar navbar-light">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Freshman Guide</a></li>
+        <li><a href="teacher-table.html">Staff Locator</a></li>
+        <li><a href="StressandWellness.html">Stress & Well-Being</a></li>
+        <li class="dropdown">
+          <a href="college-and-career.html" class="dropdown-toggle disabled" data-toggle="dropdown" >College & Career
+            <b class="carat"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Career Pathways</a></li>
+            <li><a href="#">Scholarships</a></li>
+            <li><a href="#">Finding Colleges</a></li>
+          </ul>
+        </li> <!--end dropdown-->
+        <li><a href="#">Scholarships</a></li>
+        <li><a href="#">Organization</a></li>
+        <li><a href="#">Time Management</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class ="jumbotron">
+</div>
+<div class="credit">
+  <h6>(Image from Debt.org)<h6>
+</div>
+
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class = "col-sm-2">
+      <a href="https://girlswhocodewhs.weebly.com/"><img id="logo" src="img/gwc-logo.png"></a>
+    </div>
+    <div class = "col-sm-6"></div>
+    <div class = "col-sm-4"></div>
+  </div>
+</footer>
+
+<script>
+  $('ul.nav li.dropdown').hover(function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+  }, function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+  });
+</script>
+
+</body>
+</html>
