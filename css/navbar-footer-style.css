@@ -1,14 +1,14 @@
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
-  background-color:#cb4e4a;
+  background-color:#cb4e4a; #dark red, used in lower navbar
   border:none;
 }
 
 .dropdown-menu{
   background-color: #cb4e4a;
 }
-  
+
 #logo{
   width:50%;
   height:50%;
@@ -19,7 +19,7 @@
   font-family:'Montserrat', sans-serif;
 }
 footer {
-  background-color: #383636;
+  background-color: #383636; #dark gray, used in footer
   color: white;
   font-family: 'Slabo 27px', serif;
 }
@@ -31,7 +31,7 @@ footer {
 }
 
 #bg{
-  background-color:#ea726e;
+  background-color:#ea726e; #light red, general background color (when white isn't used)
 }
 
 #myNavbar .active{
@@ -39,7 +39,7 @@ footer {
 }
 
 #myNavbar a:hover{
-  background: #d26663;
+  background: #d26663; #lightest red, used when hovering over navbar elements
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
